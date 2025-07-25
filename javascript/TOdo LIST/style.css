@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+body{
+  position: relative;
+}
+
+#daddy{
+  position: relative;
+  /* min-width: 1100px; */
+  width: 600px;
+  height: 800px;
+  border: 3px solid rgb(41, 36, 36);            
+  margin: auto;
+  margin-top: 30px;
+  /* padding: 10px; */
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#todo h1{
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#inp input{
+  height: 45px;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  /* top: 300px; */
+  margin-left: 10%;
+  margin-top: 10%;
+  font-size: large;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+
+#daddy #inp button {
+  position: absolute;
+  top: 121px;
+  left: 80%; /* Adjust this value to position the button relative to #daddy */
+  padding: 8px 9px;
+  cursor: pointer;
+  font-size: large;
+  color: blue;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.theline{
+  position: absolute;
+  width: 85%;
+  bottom: 120px;
+  margin: auto;
+  margin-left: 50px;
+  height: 20px;
+}
+.thewhat{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.thewhat button{
+  padding: 8px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+.disabled{
+  display: flex;
+  text-decoration: line-through;
+}
+@media(max-width:200px){
+  #daddy{
+    min-width: 700px;
+  }
+ 
+}
+
+
+#scroller{
+  width: 90%; /* Adjust width to fit within the container */
+  height: 400px; /* Set a fixed height for the scrollable area */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin: 30px auto; /* Center the scroller and add some margin */
+  padding: 20px; /* Add padding for better spacing */
+  border: 1px solid #ccc; /* Add a subtle border */
+  border-radius: 15px; /* Optional: Add rounded corners */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+  font-size: 40px;
+}
+
+.todo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; 
+  padding: 20px;
+  /* border: 1px solid #eee; Add a border to each task */
+  border-radius: 4px; /* Optional: Add rounded corners */
+  background-color: white;
+}
+
+.todo-container p {
+  margin: 0;
+  margin-left: 20px; /* Add spacing between checkbox and text */
+  flex-grow: 1; /* Allow text to take up remaining space */
+}
